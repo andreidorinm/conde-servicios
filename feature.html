@@ -328,6 +328,47 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- WhatsApp Floating Button -->
+<style>
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+    .whatsapp-float:hover {
+        background-color: #128c7e;
+        transform: scale(1.1);
+    }
+    .whatsapp-float i {
+        margin-top: 15px;
+    }
+    
+    /* Move back-to-top button to left side */
+    .back-to-top {
+        position: fixed;
+        right: auto !important;
+        left: 30px !important;
+        bottom: 30px !important;
+        z-index: 999;
+    }
+</style>
+
+<a href="https://wa.me/34624596387?text=Hola,%20necesito%20información%20sobre%20sus%20servicios%20de%20climatización" 
+   class="whatsapp-float" 
+   target="_blank"
+   title="Chatea con nosotros en WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
 </body>
 
 </html>
